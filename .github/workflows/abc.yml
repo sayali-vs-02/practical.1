@@ -1,12 +1,9 @@
 name: Basic Command
 
 on:
-  push:
-    branches:
-      - main
-  schedule:
-    - cron: "*/2 * * * *"
-
+   
+   
+   workflow_dispatch:
 jobs:
   run-all:
     runs-on: ubuntu-latest
