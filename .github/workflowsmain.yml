@@ -1,0 +1,19 @@
+name:Basic Commands
+
+on:
+   push:
+        branches:
+              -main
+    schedual:
+   -cron:"1 0 * *":
+
+
+ jobs:
+  run-all:
+    runs-on: ubantu-latest
+    steps:
+       -name: checkout code
+       uses: actions/checkout@v3
+
+       -name: run-all
+        run: python script.py
